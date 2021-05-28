@@ -14,9 +14,14 @@ namespace DI_example.Client
     {
         public static async Task Main(string[] args)
         {
+            //Build WebAssemblyHost
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
+
+            // Specify Root Component (app.razor)
             builder.RootComponents.Add<App>("#app");
 
+            // HttpClient Registered in DI Container
+            // lifecycle, and setting up host-level services such as the HTTP server, dependency injection, logging, and configuration
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             await builder.Build().RunAsync();
