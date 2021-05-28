@@ -23,7 +23,7 @@ namespace DI_example.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            //우리의 컨트롤러에 IUserRepository를 주입
+            //우리의 컨트롤러에 IUserRepository를 등록
             //AddScoped 메서드같은 수명범위에 대해서는 아래링크를 참고합니다.
             //https://docs.microsoft.com/ko-kr/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-5.0&pivots=webassembly
             services.AddScoped<IUserRepository, UserRepository>();
