@@ -13,7 +13,7 @@ Dependency Injection example in Blazor ( .NET5) with comment
 
 ## {ProjectName}.Shared
 
-1. [User.cs 생성](https://github.com/dhddldid/DI_example/blob/master/DI_example/Shared/User.cs)
+1. [User.cs 생성](https://github.com/dhddldid/DI_example/blob/master/DI_example/Shared/User.cs){:target="_blank"}
 
 ## {ProjectName}.Server
 
