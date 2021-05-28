@@ -2,9 +2,6 @@
 Dependency Injection example in Blazor ( .NET5) with comment
 
 
-
-[TOC]
-
 # 간단한 DI(Dependency Injection)의 이해
 
 생성자 주입을 경험해보고자 한다. 순서는 아래와 같다.
@@ -13,7 +10,7 @@ Dependency Injection example in Blazor ( .NET5) with comment
 
 ## {ProjectName}.Shared
 
-1. [User.cs 생성](https://github.com/dhddldid/DI_example/blob/master/DI_example/Shared/User.cs){:target="_blank"}
+1. [User.cs 생성](https://github.com/dhddldid/DI_example/blob/master/DI_example/Shared/User.cs)
 
 ## {ProjectName}.Server
 
