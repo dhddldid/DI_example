@@ -1,0 +1,25 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+@foreach (var item in users)
+{
+    <div>
+        @item.Name
+        @item.DateOfBirth
+    </div>
+}
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code{
+    private List<DI_example.Shared.User> users = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await Http.GetFromJsonAsync<List<DI_example.Shared.User>>("api/Home/GetAll");
+    }
+}
